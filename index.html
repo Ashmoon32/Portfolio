@@ -1,22 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Ashmoon's Portfolio</title>
+    <link rel="shortcut icon" href="./assets/ashmoon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Ashmoon's Portfolio</title>        
 </head>
 <body>
-    <header>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./assets/ashmoon.png" alt="Ashmoon Logo" width="50px" height="auto">
+                <span>Ashmoon</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
         <h1>Ashmoon</h1>
         <p>Aspiring Software Engineer</p>
     </header>
 
     <main>
-        <img src="" alt="">
+        <img src="./assets/ashmoon-pic.png" alt="Ashmoon Photo" class="profile-pic">
+        <p>Hello! I'm Ashmoon, an IT student from Myanmar (also known as burma), and aspiring full stack software
+            engineer learning web development. I'm passionate about creating clean, responsive websites and applications
+            that provide great user experiences.</p>
     </main>
-    <section id="projects"></section>
-    <footer></footer>
-    
+
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                <h3>UI/UX Design</h3>
+            </div>
+            <div class="skill">
+                <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+                <h3>Responsive Design</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="./assets/movie-website-pic.png" alt="Movies Website" class="project-img">
+                <h3><i class="fas fa-film"></i> Movies Search Website</h3>
+                <p>Simple Movie Website with API that can search movies. <br> Tech used- HTML, CSS, JavaScript and API
+                    from The Movie Database(TMDB). Notice - May Contain <strong>Adult contents(18+)</strong>. </p>
+                <div class="project-buttons">
+                    <a href="https://ashmoon32.github.io/Movie-Website/" class="btn"><i
+                            class="fas fa-external-link-alt"></i> Live Preview</a>
+                    <a href="https://github.com/Ashmoon32/Movie-Website.git" class="btn"><i class="fab fa-github"></i>
+                        GitHub Repo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./assets/landing-page-pic.png" alt="Landing Page" class="project-img">
+                <h3><i class="fas fa-window-restore"></i> Landing Page</h3>
+                <p>Landing Page of Leonardo Da Vinci. <br> Tech used - HTML and CSS(flexbox).</p>
+                <div class="project-buttons">
+                    <a href="https://ashmoon32.github.io/Landing-page/" class="btn"><i
+                            class="fas fa-external-link-alt"></i> Live Preview</a>
+                    <a href="https://github.com/Ashmoon32/Landing-page.git" class="btn"><i class="fab fa-github"></i>
+                        GitHub Repo</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="./assets/recipes-pic.png" alt="Recipes Page" class="project-img">
+                <h3><i class="fas fa-utensils"></i> Recipes Page</h3>
+                <p>Recipes Page. <br>Tech used - HTML.</p>
+                <div class="project-buttons">
+                    <a href="https://ashmoon32.github.io/odin-recipes/index.html" class="btn"><i
+                            class="fas fa-external-link-alt"></i> Live Preview</a>
+                    <a href="https://github.com/Ashmoon32/odin-recipes.git" class="btn"><i class="fab fa-github"></i>
+                        GitHub Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <p>Have a question or want to work together? Feel free to contact me!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Name</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Message</label>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/Ashmoon32" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/min-la-pyae-han-49ab0937a/" aria-label="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="mailto:nyeinmaung3021@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="copyright">© 2023 Ashmoon. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile nav when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
+
 </html>
