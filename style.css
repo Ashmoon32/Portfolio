@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+ /* header section  */
+
+ header {
+    text-align: center;
+    margin-bottom: 2rem;
+ }
+
+ header h1 {
+    font-size: 1.8rem;
+ }
+
+ header p {
+    font-size: 1rem;
+    color: #555;
+ }
